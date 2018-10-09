@@ -14,6 +14,7 @@
 		0D64A559214909EC00473198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D64A557214909EC00473198 /* LaunchScreen.storyboard */; };
 		0D64A562214A7BA300473198 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D64A561214A7BA300473198 /* Concentration.swift */; };
 		0D64A564214A82AB00473198 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D64A563214A82AB00473198 /* Card.swift */; };
+		0DF56D61216CC78D001A6710 /* ConcentrationThemeChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF56D60216CC78D001A6710 /* ConcentrationThemeChooserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0D64A55A214909EC00473198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D64A561214A7BA300473198 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		0D64A563214A82AB00473198 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0DF56D60216CC78D001A6710 /* ConcentrationThemeChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationThemeChooserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				0D64A561214A7BA300473198 /* Concentration.swift */,
 				0D64A552214909EB00473198 /* Main.storyboard */,
 				0D64A55A214909EC00473198 /* Info.plist */,
+				0DF56D60216CC78D001A6710 /* ConcentrationThemeChooserViewController.swift */,
 			);
 			path = Concentration;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF56D61216CC78D001A6710 /* ConcentrationThemeChooserViewController.swift in Sources */,
 				0D64A551214909EB00473198 /* ConcentrationViewController.swift in Sources */,
 				0D64A54F214909EB00473198 /* AppDelegate.swift in Sources */,
 				0D64A562214A7BA300473198 /* Concentration.swift in Sources */,
