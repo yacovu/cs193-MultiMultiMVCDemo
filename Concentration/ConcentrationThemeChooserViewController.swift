@@ -9,14 +9,24 @@
 import UIKit
 
 class ConcentrationThemeChooserViewController: UIViewController {
-    /*
+    
+    //bad design but is good for the demo
+//    let themes = ["Sports" : "⚽️🏀🏈⚾️🎾🏐",
+//                  "Animals": "🐳🐙🐝🐮🦖🐒",
+//                  "Flags": "🇦🇷🇨🇦🇧🇷🇺🇸🇮🇱🇭🇰"]
+    
+    
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "Choose Theme" {
+            if let themeName = (sender as? UIButton)?.currentTitle {
+                if let cvc = segue.destination as? ConcentrationViewController {
+                    cvc.theme = themeName
+                }                
+            }
+        }
     }
-    */
+
 
 }

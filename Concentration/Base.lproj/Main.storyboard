@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -70,13 +71,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nk-99-Hk8">
-                                <rect key="frame" x="16" y="732" width="166" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRJ-y4-l8F">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRJ-y4-l8F">
                                 <rect key="frame" x="103" y="666" width="169" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="New Game"/>
@@ -84,9 +79,11 @@
                                     <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1K-BX-gBG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQZ-KG-4yE">
-                                <rect key="frame" x="159" y="732" width="200" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQZ-KG-4yE">
+                                <rect key="frame" x="213.33333333333334" y="732" width="107.66666666666666" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="IJM-B1-LJ8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -206,13 +203,28 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nk-99-Hk8">
+                                <rect key="frame" x="63" y="732" width="93.666666666666629" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EQZ-KG-4yE" secondAttribute="trailing" constant="30" id="32H-oT-57L"/>
+                            <constraint firstItem="EQZ-KG-4yE" firstAttribute="leading" relation="lessThanOrEqual" secondItem="3Nk-99-Hk8" secondAttribute="trailing" constant="5" id="5XF-6d-PrU"/>
+                            <constraint firstItem="jRJ-y4-l8F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="AjP-tN-MaJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1JU-Mg-cgp" secondAttribute="trailing" constant="16" id="JVG-Me-cWm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jRJ-y4-l8F" secondAttribute="trailing" constant="103" id="ObE-4D-OdX"/>
+                            <constraint firstItem="EQZ-KG-4yE" firstAttribute="firstBaseline" secondItem="3Nk-99-Hk8" secondAttribute="firstBaseline" id="Q19-KX-a7x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Nk-99-Hk8" secondAttribute="bottom" id="RbV-VW-esn"/>
                             <constraint firstItem="1JU-Mg-cgp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="T0I-A3-MXY"/>
+                            <constraint firstItem="3Nk-99-Hk8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Wqg-eh-hEe"/>
                             <constraint firstItem="jRJ-y4-l8F" firstAttribute="top" secondItem="1JU-Mg-cgp" secondAttribute="bottom" constant="316" id="fWk-cq-Z0X"/>
                             <constraint firstItem="1JU-Mg-cgp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="g2Q-Dk-f62"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EQZ-KG-4yE" secondAttribute="trailing" constant="54" id="gBh-PM-XgL"/>
+                            <constraint firstItem="EQZ-KG-4yE" firstAttribute="baseline" secondItem="3Nk-99-Hk8" secondAttribute="baseline" id="jHe-sl-Tha"/>
+                            <constraint firstItem="3Nk-99-Hk8" firstAttribute="top" secondItem="jRJ-y4-l8F" secondAttribute="bottom" constant="8" id="nH8-nA-9Oh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
