@@ -74,6 +74,7 @@ class ConcentrationViewController: UIViewController {
     
     var theme: String? {
         didSet {
+            //bad design but is good for the demo
             switch theme! {
             case "Sports": themeIndex = 1
             case "Animals": themeIndex = 2
